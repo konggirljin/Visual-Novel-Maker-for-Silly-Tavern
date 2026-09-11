@@ -1,6 +1,4 @@
-<div align="center">
-
-<img src="docs/文游前端製作器.png" alt="文游制作器 Banner" width="100%">
+<div align="center"> <img src="docs/文游前端制作器.png" alt="文游制作器 Banner" width="100%">
 
 💡为写卡的自动制作文游前端界面
 - 你负责提供立绘的图床url，制作器负责将你的url放进文游前端模板里，自动制作正则和世界书
