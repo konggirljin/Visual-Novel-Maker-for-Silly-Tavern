@@ -1,0 +1,296 @@
+/* 文游制作器浅色美化版：只覆盖视觉，不改变原有 DOM、文字和业务逻辑。 */
+#gal制作器遮罩 {
+  background: rgba(20, 28, 45, 0.28) !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+#gal制作器窗口 {
+  width: min(1040px, calc(100vw - 28px)) !important;
+  max-height: calc(100dvh - 28px) !important;
+  overflow: hidden !important;
+  color: #273043 !important;
+  background: #f7f9fc !important;
+  border: 1px solid #d9e0eb !important;
+  border-top: 4px solid #5366a5 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 24px 70px rgba(36, 48, 77, 0.22) !important;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Microsoft YaHei',
+    sans-serif !important;
+}
+
+#gal制作器窗口 * {
+  box-sizing: border-box;
+}
+
+#gal制作器窗口 .gal头部 {
+  padding: 24px 30px 21px !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e3e8f0 !important;
+}
+
+#gal制作器窗口 .gal头部 h2 {
+  color: #202b43 !important;
+  font-size: 24px !important;
+  letter-spacing: -0.035em !important;
+}
+
+#gal制作器窗口 .gal关闭 {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d9e0eb !important;
+  border-radius: 10px;
+  color: #667085 !important;
+  background: #f8fafc !important;
+  font-size: 22px !important;
+  line-height: 1;
+}
+
+#gal制作器窗口 .gal关闭:hover {
+  color: #26386f !important;
+  border-color: #9eacd1 !important;
+  background: #eef2ff !important;
+}
+
+#gal制作器窗口 .gal主体 {
+  max-height: calc(100dvh - 156px);
+  overflow: auto;
+  padding: 22px 30px 28px !important;
+  scrollbar-color: #bac5dc transparent;
+}
+
+#gal制作器窗口 .gal导航 {
+  gap: 7px !important;
+  margin: 0 0 24px !important;
+  padding: 5px;
+  overflow-x: auto;
+  flex-wrap: nowrap !important;
+  border: 1px solid #e0e6ef;
+  border-radius: 13px;
+  background: #edf1f7;
+}
+
+#gal制作器窗口 .gal导航 button {
+  flex: 0 0 auto;
+  border-color: transparent !important;
+  border-radius: 9px !important;
+  padding: 10px 15px !important;
+  color: #59657a !important;
+  background: transparent !important;
+  font-weight: 650 !important;
+  white-space: nowrap;
+}
+
+#gal制作器窗口 .gal导航 button:hover {
+  color: #34447f !important;
+  background: #ffffff !important;
+}
+
+#gal制作器窗口 .gal导航 button.选中 {
+  color: #ffffff !important;
+  background: #5366a5 !important;
+  box-shadow: 0 3px 8px rgba(71, 86, 145, 0.2);
+}
+
+#gal制作器窗口 .gal网格 {
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr) !important;
+  gap: 18px !important;
+}
+
+#gal制作器窗口 .gal卡片 {
+  min-width: 0;
+  padding: 22px !important;
+  border: 1px solid #e0e6ef !important;
+  border-radius: 14px !important;
+  background: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(48, 63, 93, 0.055) !important;
+}
+
+#gal制作器窗口 .gal卡片 h3 {
+  margin-bottom: 12px !important;
+  color: #273452 !important;
+  font-size: 18px !important;
+  letter-spacing: -0.018em;
+}
+
+#gal制作器窗口 .gal模式栏,
+#gal制作器窗口 .gal筛选栏 {
+  gap: 7px !important;
+  margin-bottom: 20px !important;
+}
+
+#gal制作器窗口 .gal按钮 {
+  border: 1px solid #cbd4e2 !important;
+  border-radius: 9px !important;
+  padding: 9px 13px !important;
+  color: #42516b !important;
+  background: #ffffff !important;
+  font-weight: 650 !important;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+#gal制作器窗口 .gal按钮:hover {
+  color: #34447f !important;
+  border-color: #91a1cd !important;
+  background: #f3f5ff !important;
+}
+
+#gal制作器窗口 .gal按钮.gal主按钮 {
+  color: #ffffff !important;
+  border-color: #5366a5 !important;
+  background: #5366a5 !important;
+  box-shadow: 0 4px 10px rgba(83, 102, 165, 0.2);
+}
+
+#gal制作器窗口 .gal按钮.gal主按钮:hover {
+  border-color: #42528f !important;
+  background: #42528f !important;
+}
+
+#gal制作器窗口 .gal字段 {
+  gap: 8px !important;
+  margin: 18px 0 !important;
+}
+#gal制作器窗口 .gal字段 label,
+#gal制作器窗口 .gal筛选栏 label {
+  color: #34415a !important;
+  font-size: 14px !important;
+  font-weight: 750 !important;
+}
+
+#gal制作器窗口 .gal字段 input,
+#gal制作器窗口 .gal字段 select,
+#gal制作器窗口 .gal字段 textarea,
+#gal制作器窗口 .gal筛选栏 select {
+  min-height: 42px !important;
+  border: 1px solid #cfd8e6 !important;
+  border-radius: 9px !important;
+  color: #273043 !important;
+  background: #fbfcfe !important;
+  box-shadow: inset 0 1px 2px rgba(37, 53, 82, 0.035) !important;
+}
+
+#gal制作器窗口 .gal字段 input:focus,
+#gal制作器窗口 .gal字段 select:focus,
+#gal制作器窗口 .gal字段 textarea:focus,
+#gal制作器窗口 .gal筛选栏 select:focus {
+  border-color: #7082bd !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(83, 102, 165, 0.14) !important;
+}
+
+#gal制作器窗口 .gal提示 {
+  color: #728096 !important;
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+#gal制作器窗口 .gal必填 {
+  color: #c14d4d !important;
+}
+
+#gal制作器窗口 .gal素材库 {
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)) !important;
+  gap: 10px !important;
+}
+
+#gal制作器窗口 .gal素材 {
+  overflow: hidden;
+  border: 1px solid #e0e6ef !important;
+  border-radius: 11px !important;
+  background: #fbfcfe !important;
+}
+
+#gal制作器窗口 .gal素材 img {
+  background: #edf1f6 !important;
+  border-radius: 7px !important;
+}
+
+#gal制作器窗口 .gal素材 strong {
+  color: #34415a !important;
+}
+#gal制作器窗口 .gal素材 code {
+  color: #6375ad !important;
+}
+
+#gal制作器窗口 .gal批量项 {
+  border-color: #e0e6ef !important;
+  border-radius: 11px !important;
+  background: #fbfcfe !important;
+}
+
+#gal制作器窗口 .gal批量项 img {
+  background: #edf1f6 !important;
+  border-radius: 7px !important;
+}
+
+#gal制作器窗口 .gal底部 {
+  min-height: 68px;
+  padding: 14px 30px !important;
+  border-top: 1px solid #e0e6ef !important;
+  background: #ffffff !important;
+}
+
+#gal制作器窗口 .gal底部 .gal提示 {
+  color: #637089 !important;
+}
+
+/* 按钮设置是嵌套在进阶设置卡片里的第二层网格；为它单独设置最小宽度，避免被外层两列布局挤成竖条。 */
+#gal制作器窗口 .gal按钮设置网格 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) !important;
+  gap: 14px !important;
+  align-items: stretch;
+}
+
+#gal制作器窗口 .gal按钮设置网格 .gal卡片 {
+  min-width: 0 !important;
+  padding: 16px !important;
+}
+
+@media (max-width: 700px) {
+  #gal制作器窗口 {
+    width: calc(100vw - 14px) !important;
+    max-height: calc(100dvh - 14px) !important;
+    border-radius: 13px !important;
+  }
+  #gal制作器窗口 .gal头部 {
+    padding: 19px 17px 16px !important;
+  }
+  #gal制作器窗口 .gal主体 {
+    max-height: calc(100dvh - 130px);
+    padding: 15px 14px 22px !important;
+  }
+  #gal制作器窗口 .gal网格 {
+    grid-template-columns: 1fr !important;
+    gap: 13px !important;
+  }
+  #gal制作器窗口 .gal按钮设置网格 {
+    grid-template-columns: 1fr !important;
+  }
+  #gal制作器窗口 .gal卡片 {
+    padding: 17px !important;
+  }
+  #gal制作器窗口 .gal底部 {
+    padding: 12px 17px !important;
+  }
+  #gal制作器窗口 .gal底部 .gal按钮 {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #gal制作器窗口 .gal按钮 {
+    transition: none;
+  }
+}
