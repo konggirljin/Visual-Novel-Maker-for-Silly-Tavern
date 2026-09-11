@@ -21,7 +21,7 @@
 - 致谢：原模板来自dc社区老师，艾特看dc。
 - ~~还没上线的S小手机和CG鉴赏~~
 
-<img src="docs/gal_interface_sample.png" alt="gal sample picr" width="100%">
+<img src="docs/gal_interface_sample.jpg" alt="gal sample picr" width="100%">
 
 # 💡附赠跑文游立绘教程
 - 制作器不能跑图，但附赠了些个人跑文游用立绘心得+跑图提示词
